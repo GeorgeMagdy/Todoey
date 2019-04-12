@@ -31,6 +31,8 @@ class TodoListViewController : UITableViewController {
         
     }
     
+    //MARK : - Datasource methods
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
     }
@@ -47,6 +49,8 @@ class TodoListViewController : UITableViewController {
         
         return cell
     }
+    
+    //MARK : - Delegate methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
